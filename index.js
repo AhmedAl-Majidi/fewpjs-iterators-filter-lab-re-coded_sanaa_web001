@@ -10,6 +10,6 @@ function fuzzyMatch (str, firstLetter) {
 }
 
 function matchName (str, name) {
-  let x = (driver) => driver.name.toLowerCas() === name.toLowerCase()
+  let x = (driver) => driver.name.toLowerCase() === name.toLowerCase()
   return str.filter(x);
 }
