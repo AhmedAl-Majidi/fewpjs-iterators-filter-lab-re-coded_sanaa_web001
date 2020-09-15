@@ -8,3 +8,8 @@ function fuzzyMatch (str, firstLetter) {
   let x = (driver) => driver.slice(0, len) === firstLetter
   return str.filter(x);
 }
+
+function matchName (str, name) {
+  let x = (driver) => driver.nam.toLowerCas() === name.toLowerCase()
+  return str.filter(x);
+}
